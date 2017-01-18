@@ -6,12 +6,12 @@
     <!-- To: and phone number -->
     <fieldset>
     <%= label_tag(:recipient_phone, "To:") %>
-    <%= telephone_field_tag(:recipient_phone, nil, maxlength: 16, placeholder: "123-456-7890", autofocus: true, required: true) %>
+    <%= telephone_field_tag(:recipient_phone, "123", maxlength: 16, placeholder: "123-456-7890", autofocus: true, required: true) %>
     </fieldset>
     
     <!-- Message --> 
     <fieldset>
-    <%= text_area_tag(:text, nil, size: "24x5", maxlength: 160, required: true) %>
+    <%= text_area_tag(:text, "Hello", size: "24x5", maxlength: 160, required: true) %>
     </fieldset>
 
     
