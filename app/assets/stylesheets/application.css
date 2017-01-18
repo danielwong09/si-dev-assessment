@@ -13,3 +13,71 @@
  *= require_tree .
  *= require_self
  */
+ body{
+     font-family: sans-serif;
+     background-color: #f2f2f2;
+ }
+ 
+ .newMessage{
+     width:320px;
+     border: 1px solid gray;
+     padding: 10px;
+     margin: 20px auto 20px auto;
+     box-shadow: 0 0 5px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.24);
+     background-color: white;
+ }
+
+.newMessage h1 {
+    margin: 0 0 0.5em 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.newMessage fieldset {
+    border-top: 1px solid gray;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.newMessage fieldset:last-of-type {
+    border-top: none;
+}
+
+.newMessage label{
+    color:gray;
+}
+
+.newMessage input[type=tel]{
+    border:none;
+    font-size: 16px;
+    width: calc(100% - 3em);
+    outline:none;
+}
+
+.newMessage textarea{
+    border:none;
+    font-size: 16px;
+    width:100%;
+    outline:none;
+}
+
+.newMessage input[type=submit]{
+    color: white;
+    font-size: 16px;
+    background-color: #4285f4;
+    box-shadow: 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+    border-radius: 0;
+    padding: 8px 12px 10px 12px;
+    border: none;
+    cursor: pointer;
+    float: right;
+
+}
+
+.newMessage input[type=submit]:hover{
+    background-color: #3974d6;
+    box-shadow: 0 0 2px rgba(0,0,0,.4), 0 2px 4px rgba(0,0,0,.5);
+}
