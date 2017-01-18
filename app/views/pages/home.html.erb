@@ -1,6 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
+<div class="newMessage">
+<h1>New Text Message</h1>
 <%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
+    <!-- add form elements here -->
+    
+    <!-- To: and phone number -->
+    <fieldset>
+    <%= label_tag(:recipient_phone, "To:") %>
+    <%= telephone_field_tag(:recipient_phone, nil, maxlength: 16, placeholder: "123-456-7890", autofocus: true, required: true) %>
+    </fieldset>
+    
+    <!-- Message --> 
+    <fieldset>
+    <%= text_area_tag(:text, nil, size: "24x5", maxlength: 160, required: true) %>
+    </fieldset>
+
+    
+    <!-- Submit button -->
+    <fieldset>
+    <!-- Submit button -->
+    <%= submit_tag("SEND") %>
+    </fieldset>
 <% end %>
+
+</div>
