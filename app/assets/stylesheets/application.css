@@ -18,7 +18,16 @@
      background-color: #f2f2f2;
  }
  
- .newMessage{
+ .sentMessage{
+     width:320px;
+     padding: 10px;
+     margin: 20px auto 20px auto;
+     border: 1px solid gray;
+     box-shadow: 0 0 5px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.24);
+     background-color: white;
+ }
+ 
+ .message{
      width:320px;
      border: 1px solid gray;
      padding: 10px;
@@ -27,7 +36,7 @@
      background-color: white;
  }
 
-.newMessage h1 {
+h1 {
     margin: 0 0 0.5em 0;
     font-size: 16px;
     text-align: center;
