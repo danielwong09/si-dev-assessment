@@ -1,13 +1,17 @@
-<div class="sentMessage">
+<div class="sentMessage message">
 
     <dl>
       <dt>To: </dt>
-      <dd><%= params[:recipient_phone] %></dd>
+      <dd class="recipient_phone"><%= params[:recipient_phone] %></dd>
+      <span class="timeStamp">Sent <%= Time.now.in_time_zone("Eastern Time (US & Canada)").strftime("%l:%M %p") %></span> 
     </dl>
-    
-    <p><%= params[:text] %></p>
-    <p><%= Time.now.in_time_zone("Eastern Time (US & Canada)").strftime("%l:%M %p") %></p> 
+    <div>
+      <p class="text"><%= params[:text] %></p>
+      
+    </div>
 </div>
 
+<div class="controlArea">
+  <%= link_to("NEW MESSAGE", @home , class: "createButton" ) %>
+</div>
 
-<button>New Message</button>

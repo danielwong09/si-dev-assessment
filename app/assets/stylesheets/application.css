@@ -18,23 +18,53 @@
      background-color: #f2f2f2;
  }
  
- .sentMessage{
+.message{
      width:320px;
+     border: 1px solid gray;
      padding: 10px;
      margin: 20px auto 20px auto;
-     border: 1px solid gray;
      box-shadow: 0 0 5px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.24);
+     background-color: white;
+}
+ 
+ .sentMessage{
+     box-shadow: none;
      background-color: white;
  }
  
- .message{
-     width:320px;
-     border: 1px solid gray;
-     padding: 10px;
-     margin: 20px auto 20px auto;
-     box-shadow: 0 0 5px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.24);
-     background-color: white;
+.sentMessage dl{
+    margin:10px 0;
+} 
+
+.sentMessage dt{
+    display:inline-block;
+    color:gray;
  }
+ 
+.sentMessage dd{
+    display:inline-block;
+    margin:0;
+ }
+ 
+.sentMessage .text{
+    padding: 10px 0;
+    border-top: 1px solid gray;
+    margin:0;
+ }
+ 
+.sentMessage .timeStamp{
+    color: gray;
+    float: right;
+}
+
+.controlArea {
+    width:340px;
+    margin:10px auto;
+}
+
+.controlArea button{
+    float:right;
+}
 
 h1 {
     margin: 0 0 0.5em 0;
@@ -73,7 +103,7 @@ h1 {
     outline:none;
 }
 
-.newMessage input[type=submit]{
+.newMessage input[type=submit], .createButton{
     color: white;
     font-size: 16px;
     background-color: #4285f4;
@@ -90,3 +120,18 @@ h1 {
     background-color: #3974d6;
     box-shadow: 0 0 2px rgba(0,0,0,.4), 0 2px 4px rgba(0,0,0,.5);
 }
+
+.createButton{
+    background-color: #d23f31;
+    color:white;
+    text-decoration: none;
+}
+
+.createButton:hover{
+    box-shadow: 0 0 6px rgba(0,0,0,.16), 0 6px 12px rgba(0,0,0,.32);
+}
+
+.recipient_phone {
+    font-weight: bold;
+}
+
